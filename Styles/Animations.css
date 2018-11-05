@@ -1,0 +1,65 @@
+﻿@keyframes jump {
+    0% { transform: translateY(0); }
+    5% { transform: translateY(0.5rem); }
+    10% { transform: translateY(0); }
+    100% { transform: translateY(0); }
+}
+
+@-webkit-keyframes jump {
+    0% { -webkit-transform: translateY(0); }
+    5% { -webkit-transform: translateY(0.5rem); }
+    10% { -webkit-transform: translateY(0); }
+    100% { -webkit-transform: translateY(0); }
+}
+
+.animeJump {
+    animation:jump 4s linear infinite normal; 
+    animation-play-state:running;
+    -webkit-animation:jump 4s linear infinite normal;
+    -webkit-animation-play-state:running;
+}
+
+@keyframes pop {
+    0% { transform: scale(1); }
+    5% { transform: scale(1.01); }
+    10% { transform: scale(1); }
+    15% { transform: scale(1); }
+    100% { transform: scale(1); }
+}
+
+@-webkit-keyframes pop {
+    0% { -webkit-transform: scale(1); }
+    5% { -webkit-transform: scale(1.01); }
+    10% { -webkit-transform: scale(1); }
+    15% { -webkit-transform: scale(1); }
+    100% { -webkit-transform: scale(1); }
+}
+
+.animePop {
+    animation:pop 4s linear infinite normal; 
+    animation-play-state:running;
+    -webkit-animation:pop 4s linear infinite normal;
+    -webkit-animation-play-state:running;
+}
+
+@keyframes move {
+    0% { background-position:0rem top; }
+    5% { background-position:0rem top; }
+    95% { background-position:-120rem top; }
+    100% { background-position:-120rem top; }
+}
+
+@-webkit-keyframes move {
+    0% { background-position:0rem top; }
+    5% { background-position:0rem top; }
+    95% { background-position:-120rem top; }    
+    100% { background-position:-120rem top; }
+}
+
+.animeMove {
+    animation:move 120s ease-in-out infinite alternate;
+    animation-play-state:running;
+    -webkit-animation:move 120s ease-in-out infinite alternate; 
+    -webkit-animation-play-state:running;
+}
+

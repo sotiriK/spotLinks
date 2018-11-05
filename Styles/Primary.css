@@ -1,0 +1,251 @@
+﻿/* noJabs - fallback and default styles */
+
+.noJabs {
+    display:none;
+}
+
+img, table, div, p, header, article {    
+    padding:0;
+    margin:0;
+    border:none;
+    border-spacing:0;
+}
+
+html { 
+    font-size:20px; 
+}
+
+/* jabs - HTML5 browser otherwise only fallback and default styles applied */
+
+#preJabs {
+    display:none;
+}
+
+.jabs {
+}
+
+.jabsLand {
+    font-size:1.0rem;
+}
+
+.jabsPort { 
+    font-size:1.7778rem;
+}
+
+/* game window */
+
+#divClouds, #divMountains, #divHills {
+    width:inherit;
+    height:inherit;
+    background-repeat:repeat-x;    
+    background-size:32rem 16rem;
+}
+
+.jabsPort #divClouds, .jabsPort #divMountains, .jabsPort #divHills {
+    background-size:56.8896rem 28.4448rem;
+}
+
+#divClouds {   
+    background-position:left top;    
+    background-image:url(../Images/Back.png);
+}
+
+#divMountains {
+    background-position:left bottom;
+    background-image:url(../Images/Middle.png);
+}
+
+#divHills {
+    background-position:left bottom;
+    background-image:url(../Images/Front.png);
+}
+
+/* game interface */
+
+@font-face {
+    font-family:tall;
+    src:url("../Fonts/Tall.ttf") format("truetype");
+}
+
+#divScore, #divLevel, #divTime, #divTimeFill, #divIcoTime, #divIcoHint, #divIcoSound, #divIcoReset, #divIcoExit {
+    width:inherit;
+    height:inherit;
+}
+
+#divScore, #divLevel {
+    font-family:tall;    
+    padding-top:0.25rem;
+    padding-bottom:0.25rem;
+}
+
+.jabsPort #divScore, .jabsPort #divLevel {
+    padding-top:0.44445rem;
+    padding-bottom:0.44445rem;
+}
+
+#divScore {    
+    font-size:2.5rem;        
+    text-shadow:0.125rem 0.0625rem 0 rgba(255,255,255,0.75), -0.125rem -0.0625rem 0 rgba(255,255,255,0.75);
+}
+
+.jabsPort #divScore {
+    font-size:4.4445rem; 
+    text-shadow:0.22223rem 0.11111rem 0 rgba(255,255,255,0.75), -0.22223rem -0.11111rem 0  rgba(255,255,255,0.75);    
+}
+
+#divLevel {
+    font-size:1.5rem;  
+    background-image:linear-gradient(to right, rgba(255,255,255,0), rgba(255,255,255,0.25));    
+    text-align:right;
+}
+
+.jabsPort #divLevel {
+    font-size:2.6667rem;      
+}
+
+#divTime {    
+    background-color:rgba(255,255,255,0.25);  
+    box-sizing:border-box;
+    border:thin dashed #8989cc;
+    overflow:hidden;
+}
+
+#divTimeFill {
+    position:relative;
+    background-color:rgba(137,137,204,0.75);
+}
+
+#divIcoTime, #divIcoHint, #divIcoSound, #divIcoReset, #divIcoExit {
+    background-position:center center;
+    background-size:contain;
+    background-repeat:no-repeat;
+}
+
+#divIcoTime {
+    background-image:url(../Images/Time.png);
+}
+
+#divIcoHint {
+    background-image:url(../Images/Hint.png);
+}
+
+#divIcoSound.on {
+    background-image:url(../Images/Sound.png);
+}
+
+#divIcoSound.off {
+    background-image:url(../Images/Mute.png);
+}
+
+#divIcoReset, #divOverReset {
+    background-image:url(../Images/Reset.png);
+}
+
+#divIcoExit, #divOverExit {
+    background-image:url(../Images/Exit.png);
+}
+
+#spanPowHint, #spanPowTime {
+    position:absolute;
+    bottom:0;
+    right:0;
+    display:inline-block;
+    background-color:rgba(242,0,0,0.95);
+    color:white;
+    cursor:default;
+    font-family:Century;
+    padding:0.125rem;
+    padding-left:0.25rem;
+    padding-right:0.25rem;
+    border-radius:0.25rem;
+}
+
+/* cover layers */
+
+.layerOver, .layerMsg, .layerSnd {
+    background-color:rgba(255,255,255,0.5);
+}
+
+#divOver, #divMsg, #divSnd {
+    width:inherit;
+    height:inherit;
+}
+
+#divOverReset, #divOverExit, #divMsgOkay, #divSndOkay {   
+    width:8rem;
+    height:4rem;
+    background-position:center center;
+    background-size:contain;
+    background-repeat:no-repeat;
+}
+
+.jabsPort #divOverReset, .jabsPort #divOverExit, .jabsPort #divSndOkay {
+    width:14.2224rem;
+    height:7.1112rem;
+}
+
+#divOver, #divSnd {
+    text-align:center;
+    display:table-cell;
+    vertical-align:middle;
+}
+
+#divOver > div, #divSnd > div {
+    width:inherit;    
+    background-color:rgba(203,203,251,0.95);
+    padding-top:1rem;
+    padding-bottom:1rem;
+    border-radius:1rem;
+}
+
+.jabsPort #divOver > div, .jabsPort #divSnd > div {
+    padding-top:1.7778rem;
+    padding-bottom:1.7778rem;
+    border-radius:1.7778rem;
+}
+
+#divOver img {
+    display:block;
+    width:inherit;
+    padding-bottom:2rem;
+}
+
+#divSnd span {
+    display:block;
+    font-family:Century;
+    padding:2rem;
+}
+
+.jabsPort #divOver img {
+    padding-bottom:3.5556rem;
+}
+
+.jabsPort #divSnd span {
+    padding:3.5556rem;
+}
+
+#divOverReset {
+    background-image:url(../Images/Play.png);
+    display:inline-block;
+}
+
+#divOverExit {
+    background-image:url(../Images/Menu.png);
+    display:inline-block;
+}
+
+#divSndOkay {
+    background-image:url(../Images/Okay.png);
+    display:inline-block;
+}
+
+#divMsg {
+    background-image:url(../Images/Help.png);
+    background-size:contain;
+    background-repeat:no-repeat;
+}
+
+
+
+
+
