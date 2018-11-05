@@ -1,0 +1,46 @@
+﻿<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <title>SpotLinks</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <link href="Styles/Primary.css" rel="stylesheet" type="text/css" />
+    <link href="Styles/Animations.css" rel="stylesheet" type="text/css" />
+    <script src="Scripts/Canvaslib-Beta.js" type="text/javascript"></script>
+    <script src="Scripts/Jabsolute-Beta.js" type="text/javascript"></script>    
+</head>
+<body>
+    <div id="noJabs" class="noJabs">
+        <h2>Please update your browser to play this game.</h2>
+    </div>
+    <div id="preJabs">
+        <div id="divClouds" class="animeMove"></div>
+        <div id="divMountains" class="animeJump"></div>
+        <div id="divHills" class="animePop"></div>
+        <div id="divScore">0</div>
+        <div id="divLevel">Level&nbsp;<span id="spanLevel">1</span>&nbsp;</div>
+        <div id="divTime"><div id="divTimeFill"></div></div>
+        <div id="divIcoTime"><span id="spanPowTime">3</span></div>
+        <div id="divIcoHint"><span id="spanPowHint">3</span></div>
+        <div id="divIcoSound" class="off"></div>
+        <div id="divIcoReset"></div>
+        <div id="divIcoExit"></div>
+        <canvas id="cnv"></canvas>
+        <div id="divMsg"></div>
+        <div id="divOver">
+            <div>
+                <img src="Images/Over.png" />
+                <div id="divOverReset"></div>
+                <div id="divOverExit"></div>
+            </div>
+        </div>
+        <div id="divSnd">
+            <div>
+                <span>Oh no! It looks like the device you're using has a problem with sound... or it may just be the browser, why not try a different one?</span>
+                <div id="divSndOkay"></div>
+            </div>
+        </div>
+    </div>        
+    <script src="Scripts/Primary.js" type="text/javascript"></script>
+</body>
+</html>
